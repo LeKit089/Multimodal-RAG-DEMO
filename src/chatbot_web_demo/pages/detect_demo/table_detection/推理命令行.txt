@@ -1,0 +1,5 @@
+##############################DEMO:pdf输入，表格检测推理输出##############################
+python inference-pdf.py --pdf_path ./test1.pdf --output_folder ./infer_pdf --config ./icdar19_configs/cascade/cascade_dit_base.yaml --opts MODEL.WEIGHTS ./icdar19_modern/model.pth
+
+##############################DEMO:图片输入，表格检测推理输出##############################
+python inference.py --image_path 11-20.jpg --output_file_name 11-20-infer.jpg --config ./icdar19_configs/cascade/cascade_dit_base.yaml --opts MODEL.WEIGHTS ./icdar19_modern/model.pth
