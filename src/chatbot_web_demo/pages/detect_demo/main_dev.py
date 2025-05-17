@@ -244,7 +244,10 @@ def visulize_img():
                         base_name = file.split('.')[0]  # 获取文件的基本名称，例如：detected_1
                         cropped_files = [
                             f for f in os.listdir(output_file_or_folder)
-                            if f.startswith(base_name + '_cropped_') and f.endswith('.png')
+                            if (
+                                (f.startswith(base_name + '_cropped_') or f.startswith(base_name + '_cropped'))
+                                and f.endswith('.png')
+                            )
                         ]
 
                          # 如果有可用的裁剪文件，则创建一个选择器
