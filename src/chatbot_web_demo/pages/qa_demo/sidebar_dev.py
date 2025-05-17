@@ -302,7 +302,7 @@ def sidebar():
     with st.sidebar:
         st.image(
             "/home/project/data/zpl/multimodal_RAG/src/chatbot_web_demo/374920_tech-logo-png.png",
-            use_column_width=True,
+            use_container_width=True,
         )
         st.markdown(
             "## 指引\n"
