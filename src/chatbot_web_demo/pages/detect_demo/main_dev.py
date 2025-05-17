@@ -340,7 +340,7 @@ def upload_data():
 def detect_demo():
     st.header("识别工具")
     with st.sidebar:
-        st.image("/home/project/data/zpl/multimodal_RAG/src/chatbot_web_demo/374920_tech-logo-png.png", use_column_width=True)
+        st.image("/home/project/data/zpl/multimodal_RAG/src/chatbot_web_demo/374920_tech-logo-png.png", use_container_width=True)
 
     upload_data()
     visulize_img()
