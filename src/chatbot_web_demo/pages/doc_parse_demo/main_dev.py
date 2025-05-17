@@ -175,7 +175,7 @@ def upload_data():
 def doc_parse_demo():
     st.header("研报解析")
     with st.sidebar:
-        st.image("/home/project/data/zpl/multimodal_RAG/src/chatbot_web_demo/374920_tech-logo-png.png", use_column_width=True)
+        st.image("/home/project/data/zpl/multimodal_RAG/src/chatbot_web_demo/374920_tech-logo-png.png", use_container_width=True)
 
     if "llm" not in st.session_state and "embed_model" not in st.session_state:
         load_model()
